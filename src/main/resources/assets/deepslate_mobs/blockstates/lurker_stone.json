@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "deepslate_mobs:block/lurker_stone"
+    }
+  }
+}
