@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "deepslate_mobs",
+	"version": "${version}",
+	"name": "Deepslate Mob Varients",
+	"description": "A small mod that replaces the usual hostile mobs with new variants in deepslate caves.",
+	"authors": [
+		"Dazeful"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "All Rights Reserved",
+	"icon": "assets/deepslate_mobs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dazeful.deepslate_mobs.DeepslateMobs"
+		],
+		"fabric-datagen": [
+			"net.dazeful.deepslate_mobs.DeepslateMobsDataGenerator"
+		],
+		"client": [
+			"net.dazeful.deepslate_mobs.DeepslateMobsClient"
+		]
+	},
+	"mixins": [
+		"deepslate_mobs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
