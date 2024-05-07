@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item SHADED_FLESH = registerItem("shaded_flesh",
-            new Item(new FabricItemSettings()));
+            new Item(new FabricItemSettings().food(ModFoodComponents.SHADED_FLESH)));
     public static final Item STRONG_BONE = registerItem("strong_bone",
             new Item(new FabricItemSettings()));
 
