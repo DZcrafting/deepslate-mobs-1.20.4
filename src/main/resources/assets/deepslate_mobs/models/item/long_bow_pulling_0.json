@@ -1,0 +1,6 @@
+{
+  "parent": "mccourse:item/long_bow",
+  "textures": {
+    "layer0": "mccourse:item/long_bow_pulling_0"
+  }
+}

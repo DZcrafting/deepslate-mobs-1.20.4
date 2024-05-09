@@ -22,6 +22,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.SHADED_FLESH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MOLTEN_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.STRONG_BONE, Models.GENERATED);
 
     }
