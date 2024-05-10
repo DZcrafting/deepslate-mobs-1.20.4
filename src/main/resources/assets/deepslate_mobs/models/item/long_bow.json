@@ -42,7 +42,7 @@
     {
       "predicate": {
         "pulling": 1,
-        "pull": 0.9
+        "pull": 0.95
       },
       "model": "deepslate_mobs:item/long_bow_pulling_2"
     }
