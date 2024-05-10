@@ -1,6 +1,6 @@
 {
-  "parent": "mccourse:item/long_bow",
+  "parent": "deepslate_mobs:item/long_bow",
   "textures": {
-    "layer0": "mccourse:item/long_bow_pulling_1"
+    "layer0": "deepslate_mobs:item/long_bow_pulling_1"
   }
 }

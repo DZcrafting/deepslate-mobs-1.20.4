@@ -1,7 +1,9 @@
 package net.dazeful.deepslate_mobs;
 
 import net.dazeful.deepslate_mobs.block.ModBlocks;
+import net.dazeful.deepslate_mobs.entity.ModEntities;
 import net.dazeful.deepslate_mobs.item.ModItems;
+import net.dazeful.deepslate_mobs.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -13,8 +15,9 @@ public class DeepslateMobs implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModRegistries.registerModStuffs();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModEntities.registerModEntities();
 	}
 }
