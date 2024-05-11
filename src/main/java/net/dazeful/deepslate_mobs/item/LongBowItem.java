@@ -51,10 +51,10 @@ public class LongBowItem extends BowItem implements Vanishable {
             ArrowItem arrowItem = (ArrowItem)(itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
             PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
             persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0f, f * 3.0f, 1.0f);
-            if (f >= 1.0f) {
+            if (f >= 1.5f) { //here
                 persistentProjectileEntity.setCritical(true);
             }
-            persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() * (f * 10.0f));
+            persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() * f); // new damage here
             if ((j = EnchantmentHelper.getLevel(Enchantments.POWER, stack)) > 0) {
                 persistentProjectileEntity.setDamage(persistentProjectileEntity.getDamage() + (double)j * 0.5 + 0.5);
             }
